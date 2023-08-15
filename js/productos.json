@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1, 
+        "nombre": "HYALURONIC 4D SERUM", 
+        "precio": 8835, 
+        "desc": "Concentrado hidratante con efecto relleno. Toda la potencia del ácido hialurónico en su máxima concentración en efecto sinérgico con carrageninas", 
+        "img": "hialuronico.jpg" 
+    },
+    {
+        "id": 2, 
+        "nombre": "SKIN FACE CREAM", 
+        "precio": 22300, 
+        "desc": "Set de cremas faciales de suave emoliencia que reparan e hidratan la piel y le devuelve el brillo y la luminosidad de las pieles jóvenes.", 
+        "img": "hidratante.jpg"
+    },
+    {
+        "id": 3, 
+        "nombre": "MOUSSE DE AVENA", 
+        "precio": 6975, 
+        "desc": "Ayuda a calmar, suavizar e hidratar rápidamente, a mejorar los signos de las pieles sensibilizadas, y a restaurar el manto hidrolipídico. Proporciona confort y suavidad.", 
+        "img": "mousse.jpg"
+    },
+    {
+        "id": 4, 
+        "nombre": "SET RENOVADORES", 
+        "precio": 25980, 
+        "desc": "Contiene una combinación de activos que asegura una adecuada hidratación, estimula la producción de sustancias higroscópicas. Mejora la retención de humedad. ", 
+        "img": "renovador.jpg"
+    },
+    {
+        "id": 5, 
+        "nombre": "PROTECTOR SOLAR", 
+        "precio": 12300, 
+        "desc": "Protector solar con una excelente dispersión y combinación de pantallas físicas y químicas que otorgan una protección solar de amplio espectro.", 
+        "img": "protector.jpg"
+    },
+    {
+        "id": 6, 
+        "nombre": "RADIANCE C", 
+        "precio": 15100, 
+        "desc": "Gel para rostro con una innovadora molécula de vitamina C, alfa arbutina y ácido hialurónico que atenúan los signos del envejecimiento, mejoran la formación de colágeno y unifican el tono de la piel.", 
+        "img": "radiance.jpg"
+    },
+    {
+        "id": 7, 
+        "nombre": "SET REPARADORES", 
+        "precio": 32450, 
+        "desc": "Contiene un conjunto de nutrientes que le proporcionan a la piel un aspecto joven, turgente y saludable. Formulada con nutrientes y minerales que ayudan a mejorar la estructura de la piel y el proceso de reparación.", 
+        "img": "reparador.jpg"
+    },
+    {
+        "id": 8, 
+        "nombre": "ACEITE DE COCO", 
+        "precio": 4500, 
+        "desc": "Formulada con un complejo de vitaminas B3, B5, B6, C y E que ayuda a mejorar la función barrera de la piel, ayuda a producir colágeno y aporta reconocidos antioxidantes.", 
+        "img": "aceite.jpg"
+    },
+    {
+        "id": 9, 
+        "nombre": "LUMIN PREVENT", 
+        "precio": 4445, 
+        "desc": "Superantioxidante que ayuda a prevenir el envejecimiento prematuro por exposición a los espectros de luz visible e infrarroja.",
+        "img": "luminprevent.jpg"
+    }
+]

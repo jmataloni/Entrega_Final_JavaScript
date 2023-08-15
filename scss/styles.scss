@@ -1,0 +1,190 @@
+@import "variables";
+@import "index";
+@import "productos";
+@import "contacto";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $body-back-color;
+    font-family: $font-gral;
+    font-weight: 300;
+}
+
+.header {
+    background-color: $header-back-color !important;
+
+    #marca {
+        font-family: $font-titles;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+
+    .navbar-toggler {
+        background-color: $body-back-color;
+    }
+
+    .ordenamiento {
+        padding-top: 8px;
+    }
+
+    .botonBuscar {
+        background-color: $menu-items-h-color;
+        color: $menu-items-color;
+        font-size: 10px;
+        font-family: $font-gral;
+
+        &:hover {
+            background-color: $footer-letter-color;
+        }
+    }
+}
+
+#carrito-item {
+    padding-top: 8px;
+    list-style-type: none;
+}
+
+.navbar-nav {
+    padding-right: 70px;
+
+    a {
+        font-size: 18px;
+        color: $menu-items-color;
+        margin-right: 40px;
+        margin-left: 40px;
+
+        &:hover {
+            color: $menu-items-h-color;
+        }
+    }
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    video {
+        width: 1160px;
+        height: 450px;
+    }
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: $footer-back-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+
+    .marca {
+        font-family: $font-titles;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+    }
+
+    .redes {
+        display: flex;
+
+        h5 {
+            font-family: $font-titles;
+            font-size: 30px;
+            color: $footer-letter-color;
+        }
+
+        .redes-items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            list-style-type: none;
+
+            li {
+                margin-right: 10px;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.direccion {
+    text-align: center !important;
+    color: $footer-letter-color;
+    font-size: 10px;
+
+    h6 {
+        font-size: 13px;
+        font-weight: 400px;
+    }
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.boton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 40%;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    color: #f0ead2;
+    background-color: #001d3d;
+    overflow: hidden;
+
+    & span {
+        position: relative;
+        z-index: 2;
+        transition: .3s ease all;
+    }
+
+    &:hover::after {
+        left: 0;
+    }
+
+    &::after {
+        content: "";
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: calc(-100% - 30px);
+        border-bottom: 30px solid #006992;
+        border-right: 30px solid transparent;
+        transition: .4s ease-in-out all;
+    }
+}

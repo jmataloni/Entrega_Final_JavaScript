@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- LINK DE BOOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- LINK DE FUENTES -->
+    <!-- FONT ABORETO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <!-- FONT ALBERT SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Productos</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row"> <!--header-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
+                <div class="container">
+                    <a class="navbar-brand" id="marca" href="../index.html">KINTSUGI</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="menu-items navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <form class="d-flex">
+                                <input id="buscador" class="form-control me-2"
+                                    placeholder="Encuentre el nombre o marca del cosmetico" aria-label="Search">
+                                <button id="btnBuscar" class="btn botonBuscar">Buscar</button>
+                            </form>
+                        </ul>
+                        <ul class="ordenamiento">
+                            <select id="selectOrden" class="form-select form-select-sm "
+                                aria-label=".form-select-sm example">
+                                <option selected>Ordenar por:</option>
+                                <option value="1">Mayor a menor</option>
+                                <option value="2">Menor a mayor</option>
+                                <option value="3">Alfabeticamente</option>
+                            </select>
+                        </ul>
+                        <ul className="navbar-nav me-auto">
+                            <li className="nav-item" id="carrito-item">
+                                <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal"
+                                    class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container contenedor">
+            <div class="tit_prod"><h2>NUESTROS PRODUCTOS</h2></div>
+            <div id="coincidencia"></div>
+            <div id="productos" class="row"></div>
+
+            <!--Modal Carrito-->
+            <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal-body">
+
+                        </div>
+                        <div class="precioTotal row ml-auto">
+                            <p id="precioTotal"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary boton-modal" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" data-bs-dismiss="modal" class="btn btn-success boton-modal boton-modal-compra"id="botonFinalizarCompra">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer row">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col redes"> <!-- REDES -->
+                            <h5 class="marca">KINTSUGI</h5>
+                            <ul class="redes-items">
+                                <li><a title="Instagram" href="https://www.instagram.com"><img
+                                            src="../images/instagram.ico" alt="Instagram" /></a></li>
+                                <li><a title="Facebook" href="https://www.facebook.com"><img
+                                            src="../images/facebook.ico" alt="Facebook" /></a></li>
+                                <li><a title="Twitter" href="https://www.twitter.com"><img
+                                            src="../images/twitter_icon-icons.com_66093.ico" alt="Twitter" /></a></li>
+                                <li><a title="Youtube" href="https://www.youtube.com"><img src="../images/youtube.ico"
+                                            alt="Yotube" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="col direccion"> <!-- DIRECCION -->
+                            <h6>¡Encontranos!</h6>
+                            <p>Bv. Illia 500 Cordoba, Argentina</p>
+                        </div>
+                        <div class="col newsletter"> <!-- NEWSLETTER -->
+                            <button class="boton"><span>Newsletter</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div><!-- FIN CONTAINER FLUID -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

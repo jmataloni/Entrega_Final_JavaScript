@@ -1,0 +1,29 @@
+.info {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+
+    .info_letra {
+        text-align: center;
+
+        h4 {
+            font-family: $font-titles;
+            font-size: 30px;
+        }
+
+        .espacio_p {
+            width: 500px;
+            margin: 0 auto;
+            //ARTICLE "¿QUIENES SOMOS?"
+            p {
+                font-size: 17px;
+                margin-top: 10px;
+            }
+            .text-justify {
+                text-align: justify;
+            }
+        }
+
+    }
+}

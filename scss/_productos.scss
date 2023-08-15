@@ -1,0 +1,94 @@
+.container {
+    .tit_prod {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        h2 {
+            font-family: $font-titles;
+            font-size: 30px;
+        }
+    }
+    .alinear {
+        display: flex;
+        justify-content: center;
+        .card {
+            width: 30rem;
+            height: 45rem;
+
+            img {
+                height: 50%;
+            }
+
+            .card-body {
+                text-align: center;
+
+                .card-title {
+                    font-family: $font-titles;
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                }
+
+                .card-text {
+                    height: 60%;
+                    text-align: left;
+                    font-family: $font-gral;
+                    font-size: 14px;
+                }
+
+                .btn {
+                    color: $menu-items-color;
+                    background-color: #001d3d;
+
+                    &:hover {
+                        background-color: #006992;
+                    }
+                }
+
+                .btn_prod {
+                    font-size: 14px;
+                    font-family: $font-gral;
+                    width: 120px;
+                }
+
+            }
+        }
+    }
+
+    .modal {
+        h5 {
+            font-family: $font-titles;
+            font-size: 20px;
+        }
+
+        h6 {
+            font-family: $font-gral;
+            font-size: 15px;
+        }
+    }
+
+    .boton-modal {
+        font-size: 13px;
+    }
+
+    .boton-modal-compra {
+        color: $menu-items-color;
+        background-color: #001d3d;
+        &:hover {
+            background-color: #006992;
+        } 
+    }
+}
+.notificacion {
+    font-size: 15px;
+    font-family: $font-gral;
+}
+.swal2-title {
+    @extend .notificacion;
+}
+.pTotal{
+    font-size: 20px;
+    font-family: $font-gral;
+    padding-left: 30px;
+}

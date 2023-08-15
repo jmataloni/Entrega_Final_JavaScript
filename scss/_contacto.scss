@@ -1,0 +1,52 @@
+@import "variables";
+//MAIN DEL FORM CONTACTO
+.container{
+    .contacto{
+        margin-top: 40px;
+        //FORM DE CONTACTO
+        .form{
+            .form_titulo{
+                text-align: center;
+                h4{
+                    font-family: $font-titles;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+            .form_content{
+                margin-right: 100px;
+                margin-left: 100px;
+                label{
+                    font-size: 14px;
+                }
+            }
+            .btn {
+                background-color: #001d3d;
+                width: 40%;
+                height: 30px;
+                color: white; 
+                font-size: 15px;
+                font-family: $font-gral;
+            }
+            .btn-content{
+                text-align:center; 
+            }
+        }
+        .dir{
+            text-align: center;
+            .dir_titulo{
+                h5{
+                    font-size: 30px;
+                    font-family: $font-maps;
+                    margin-bottom: 19px;
+                }
+            }
+            .dir_mapa{
+                iframe{
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

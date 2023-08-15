@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- LINK DE BOOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <!-- LINK DE FUENTES -->
+    <!-- FONT ABORETO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <!-- FONT ALBERT SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>KINTSUGI</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row"> <!--header-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark header">
+                <div class="container">
+                    <a class="navbar-brand" id="marca" href="index.html">KINTSUGI</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="menu-items navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <form class="d-flex">
+                                <input id="buscador" class="form-control me-2" placeholder="Encuentre el nombre o marca del cosmetico"
+                                    aria-label="Search">
+                                <button id="btnBuscar" class="btn btn-outline-success">Buscar</button>
+                            </form>
+        
+                        </ul>
+                        <ul class="ordenamiento">
+                            <select id="selectOrden" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                <option selected>Ordenar por:</option>
+                                <option value="1">Mayor a menor</option>
+                                <option value="2">Menor a mayor</option>
+                                <option value="3">Alfabeticamente</option>
+                            </select>
+                        </ul>
+                        <ul className="navbar-nav me-auto">
+                            <li className="nav-item" id="carrito-item">
+                                <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal"
+                                    class="btn btn-secondary"><i class="fas fa-shopping-cart fa-1x"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- CONTENIDO DE LA PAGINA -->
+        <div class="container"> <!-- MAIN VIDEO -->
+            <main class="row main">
+                <video muted autoplay loop src="./images/welcomespa.mp4 " type="video/mp4"
+                    alt="Video de bienvenida"></video>
+            </main> <!-- FIN MAIN -->
+
+            <section class="row info"> <!-- SOBRE NOSOTROS -->
+                <article class="col info_letra">
+                    <h4>¿QUIENES SOMOS?</h4>
+                    <div class="espacio_p">
+                        <p class="text-justify acomodar-margin">
+                            <strong>¡Bienvenido a nuestra estética!</strong> Estamos encantados de recibirte y brindarte
+                            nuestros servicios de belleza y bienestar. En nuestra estética, nos preocupamos por realzar tu
+                            belleza natural y hacerte sentir renovado y confiado. Nuestro equipo de profesionales altamente
+                            capacitados está listo para atenderte y ofrecerte una experiencia única.
+                        </p>
+                        <p class="text-justify acomodar-margin">
+                            Nos esforzamos por crear un ambiente acogedor y relajante donde puedas desconectar del estrés
+                            diario y disfrutar de un tiempo para ti. Nuestros productos de alta calidad y técnicas avanzadas
+                            nos permiten brindarte resultados excepcionales. <strong>¡Gracias por elegirnos y confiar en
+                                nosotros! Estamos aquí para cuidar de ti. </strong>
+                        </p>
+                    </div>
+                </article>
+                <!-- ARTICULO NUESTRA ESTETICA-->
+                <article class="col info_letra">
+                    <h4>NUESTRA ESTETICA</h4>
+                    <div class="espacio_p">
+                        <!-- CARRUSEL -->
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/estetica.jpeg" class="d-block w-100" alt="servicio de plasma">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/estetica1.webp" class="d-block w-100" alt="serivcio de limpieza">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/estetica2.webp" class="d-block w-100" alt="servicio de masajes">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <!-- PIE DE PAGINA -->
+        <footer class="footer row">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col redes"> <!-- REDES -->
+                            <h5 class="marca">KINTSUGI</h5>
+                            <ul class="redes-items">
+                                <li><a title="Instagram" href="https://www.instagram.com"><img src="./images/instagram.ico"
+                                            alt="Instagram" /></a></li>
+                                <li><a title="Facebook" href="https://www.facebook.com"><img src="./images/facebook.ico"
+                                            alt="Facebook" /></a></li>
+                                <li><a title="Twitter" href="https://www.twitter.com"><img
+                                            src="./images/twitter_icon-icons.com_66093.ico" alt="Twitter" /></a></li>
+                                <li><a title="Youtube" href="https://www.youtube.com"><img src="./images/youtube.ico"
+                                            alt="Yotube" /></a></li>
+                            </ul>
+                        </div>
+                        <div class="col direccion"> <!-- DIRECCION -->
+                            <h6>¡Encontranos!</h6>
+                            <p>Bv. Illia 500 Cordoba, Argentina</p>
+                        </div>
+                        <div class="col newsletter"> <!-- NEWSLETTER -->
+                            <button class="boton"><span>Newsletter</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div> <!--fin container-fluid-->
+
+    <!-- LINK DE JS DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
